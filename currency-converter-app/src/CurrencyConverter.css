@@ -1,0 +1,36 @@
+.converter {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group input,
+  .input-group select {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .input-group span {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .result {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  

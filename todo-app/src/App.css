@@ -1,0 +1,102 @@
+/* Basic reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for the entire app */
+.App {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Form Styles */
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: calc(100% - 22px); /* Ensure full width accounting for padding */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+textarea {
+  resize: vertical; /* Allows vertical resizing only */
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Task List Styles */
+.TaskItem {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+.TaskItem h2,
+.TaskItem h4 {
+  margin-bottom: 10px;
+}
+
+.TaskItem button {
+  margin-right: 10px;
+}
+
+.TaskItem .subtask-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* Filter/Sort Styles */
+.FilterSort {
+  margin-bottom: 20px;
+}
+
+.FilterSort h3 {
+  margin-bottom: 10px;
+}
+
+.FilterSort select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
